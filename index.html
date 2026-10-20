@@ -58,6 +58,40 @@
 .sm-page-nav{display:flex;flex-wrap:wrap;gap:8px;padding:10px 12px;margin-bottom:14px;border-bottom:1px solid #e5e7eb}.sm-page-nav a{padding:8px 12px;border-radius:8px;background:#f3f0ff;color:#4f46e5;text-decoration:none;font-weight:700}.sm-page[hidden]{display:none!important}
 
 .sm-page-nav{display:flex;flex-wrap:wrap;gap:8px;padding:10px 12px;margin-bottom:14px;border-bottom:1px solid #e5e7eb}.sm-page-nav a{padding:8px 12px;border-radius:8px;background:#f3f0ff;color:#4f46e5;text-decoration:none;font-weight:700}.sm-page[hidden]{display:none!important}
+
+/* Cours de programmation ajouté à la page d'accueil */
+.html-course{--course-ink:#202338;--course-purple:#6045d8;color:var(--course-ink);background:#f6f7fb;padding:clamp(14px,3vw,30px);font-size:16px;line-height:1.65}
+.html-course *{box-sizing:border-box}
+.html-course .course-hero{padding:clamp(22px,4vw,42px);border-radius:18px;background:linear-gradient(135deg,#17172f,#3d287b);color:#fff;margin:12px 0 24px}
+.html-course .course-hero h2{font-size:clamp(28px,4vw,42px);line-height:1.15;margin:12px 0}
+.html-course .course-hero p{max-width:800px}
+.html-course .course-badge{display:inline-block;padding:5px 10px;border-radius:99px;background:#ffffff20;font-size:12px;font-weight:800;letter-spacing:.08em}
+.html-course .course-stats{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.html-course .course-stats span{padding:6px 10px;border-radius:8px;background:#ffffff18}
+.html-course .course-search-wrap{background:#fff;border:1px solid #e3e5ef;padding:18px;border-radius:14px;margin-bottom:18px}
+.html-course .course-search-wrap label{display:block;font-weight:800;margin-bottom:8px}
+.html-course #htmlCourseSearch{width:100%;padding:13px 14px;border:2px solid #d8d5ee;border-radius:10px;font:inherit}
+.html-course #htmlCourseSearch:focus{outline:3px solid #6045d833;border-color:#6045d8}
+.html-course #htmlCourseCount{margin:6px 0 0;color:#62677a;font-size:13px}
+.html-course .course-nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+.html-course .course-nav a{background:#ece9ff;color:#4932ad;padding:8px 11px;border-radius:9px;text-decoration:none;font-weight:700;font-size:14px}
+.html-course .course-nav a:hover{background:#ddd6ff;opacity:1}
+.html-course .course-section{scroll-margin-top:16px;background:#fff;border:1px solid #e5e7ef;border-radius:16px;padding:clamp(16px,3vw,26px);margin:20px 0}
+.html-course .course-section h2{font-size:clamp(22px,3vw,30px);line-height:1.25;margin:0 0 14px;color:#2d2459}
+.html-course .course-section h3{margin:0 0 8px;font-size:17px}
+.html-course .course-grid,.html-course .course-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:13px;margin:16px 0}
+.html-course .course-card{min-width:0;padding:16px;border:1px solid #e6e6f1;border-radius:12px;background:#fbfbff}
+.html-course .course-card p:last-child{margin-bottom:0}
+.html-course .course-card code,.html-course .course-tip code{overflow-wrap:anywhere}
+.html-course .course-code{max-width:100%;overflow:auto;padding:16px;border-radius:10px;background:#171927;color:#f4f4ff;font-size:14px;line-height:1.6;white-space:pre}
+.html-course .course-code code{font-family:Consolas,Monaco,monospace}
+.html-course .course-tip{padding:15px 17px;margin:16px 0;border-left:4px solid #7457e8;border-radius:8px;background:#f0edff}
+.html-course .course-checklist{padding-left:24px}
+.html-course .course-checklist li{margin:8px 0}
+.html-course .course-end{padding:18px;text-align:center;background:#f0edff;border-radius:12px;font-weight:700}
+.html-course .course-item[hidden]{display:none!important}
+@media(max-width:600px){.html-course{padding:10px}.html-course .course-section{padding:14px}.html-course .course-code{font-size:12px}.html-course .course-nav a{font-size:13px}}
+
 </style>
 </head>
 <body>
@@ -66,7 +100,270 @@
   <div style="background:#ffffff;padding:16px"><p style="margin:0;font-size:20px;color:#000000;text-align:left;line-height:1.65">Ici vous aller aprendre comment déveloper les site web et vous serais imbatable</p></div>
   <div style="background:#ffffff;padding:16px"><p style="margin:0;font-size:16px;color:#000000;text-align:left;line-height:1.65">cliquer sur le lien pour télécharger ce lien  c&#39;est visual studio code cela vous permetra de faire des site internet local</p></div>
   <div style="background:#ffffff;padding:12px"><div style="text-align:left"><a  href="https://code.visualstudio.com/sha/download?build=stable&amp;os=win32-x64-user" style="color:#6857e8;font-size:16px;text-decoration:underline">Visual studio code
-</a></div></div></section>
+</a></div></div>
+  <div class="html-course">
+    <section class="course-hero">
+      <span class="course-badge">COURS POUR DÉBUTANTS</span>
+      <h2>Apprends le HTML pas à pas</h2>
+      <p>Le HTML sert à organiser le contenu d'une page web : titres, paragraphes, images, liens, listes, formulaires… Cherche une balise, lis son explication et teste les exemples.</p>
+      <div class="course-stats"><span>📘 HTML</span><span>🎨 CSS</span><span>⚙️ JavaScript</span><span>🧪 Exemples à tester</span></div>
+    </section>
+
+    <div class="course-search-wrap">
+      <label for="htmlCourseSearch">🔎 Rechercher une balise ou une notion</label>
+      <input id="htmlCourseSearch" type="search" placeholder="Ex. : image, lien, couleur, bouton…" autocomplete="off">
+      <p id="htmlCourseCount" aria-live="polite">Toutes les fiches sont affichées.</p>
+    </div>
+
+    <nav class="course-nav" aria-label="Sommaire du cours">
+      <a href="#cours-demarrer">Débuter</a><a href="#cours-structure">Structure</a><a href="#cours-texte">Texte</a>
+      <a href="#cours-liens">Liens et images</a><a href="#cours-listes">Listes et tableaux</a>
+      <a href="#cours-formulaires">Formulaires</a><a href="#cours-semantiques">Balises utiles</a>
+      <a href="#cours-css">CSS</a><a href="#cours-js">JavaScript</a><a href="#cours-pratique">Exercice</a>
+    </nav>
+
+    <section class="course-section" id="cours-demarrer">
+      <h2>1. Comment fonctionne un site web ?</h2>
+      <div class="course-grid">
+        <article class="course-card"><h3>HTML — le contenu</h3><p>Il donne une structure à la page : titres, textes, images et boutons.</p><code>&lt;h1&gt;Bonjour !&lt;/h1&gt;</code></article>
+        <article class="course-card"><h3>CSS — l'apparence</h3><p>Il gère les couleurs, les tailles, les espaces et la disposition.</p><code>h1 { color: blue; }</code></article>
+        <article class="course-card"><h3>JavaScript — les actions</h3><p>Il permet de réagir aux clics, vérifier un formulaire ou modifier la page.</p><code>alert("Salut !");</code></article>
+      </div>
+      <div class="course-tip"><strong>À retenir :</strong> une balise HTML s'écrit souvent avec une ouverture <code>&lt;p&gt;</code> et une fermeture <code>&lt;/p&gt;</code>. Le contenu se place entre les deux. Certaines balises, comme <code>&lt;img&gt;</code>, n'ont pas de balise de fermeture.</div>
+    </section>
+
+    <section class="course-section" id="cours-structure">
+      <h2>2. Les lignes de base d'un fichier HTML</h2>
+      <p>Un fichier de page web se termine généralement par <code>.html</code>. Voici une structure complète minimale :</p>
+      <pre class="course-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Mon premier site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Bonjour !&lt;/h1&gt;
+  &lt;p&gt;Voici mon premier site.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <div class="course-cards">
+        <article class="course-card course-item" data-search="doctype document type navigateur html"><h3><code>&lt;!DOCTYPE html&gt;</code></h3><p>Indique au navigateur qu'il doit interpréter la page comme du HTML moderne.</p></article>
+        <article class="course-card course-item" data-search="html lang langue français"><h3><code>&lt;html lang="fr"&gt;</code></h3><p>Contient toute la page. <code>lang="fr"</code> indique que la langue principale est le français.</p></article>
+        <article class="course-card course-item" data-search="head en-tête informations titre meta"><h3><code>&lt;head&gt;</code></h3><p>Contient les informations de la page, comme son titre, son encodage et les fichiers CSS. Ces informations ne sont généralement pas affichées dans la page.</p></article>
+        <article class="course-card course-item" data-search="meta charset utf-8 accents caractères"><h3><code>&lt;meta charset="UTF-8"&gt;</code></h3><p>Permet d'afficher correctement les caractères, notamment les accents.</p></article>
+        <article class="course-card course-item" data-search="meta viewport mobile téléphone responsive écran"><h3><code>&lt;meta name="viewport" ...&gt;</code></h3><p>Aide la page à s'adapter à la largeur d'un téléphone ou d'un ordinateur.</p></article>
+        <article class="course-card course-item" data-search="title titre onglet navigateur"><h3><code>&lt;title&gt;</code></h3><p>Définit le titre affiché dans l'onglet du navigateur.</p></article>
+        <article class="course-card course-item" data-search="body corps contenu visible"><h3><code>&lt;body&gt;</code></h3><p>Contient l'essentiel du contenu visible du site.</p></article>
+      </div>
+    </section>
+
+    <section class="course-section" id="cours-texte">
+      <h2>3. Écrire et organiser du texte</h2>
+      <div class="course-cards">
+        <article class="course-card course-item" data-search="h1 h2 h3 h4 h5 h6 titre sous-titre"><h3><code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code></h3><p>Créent des titres de différents niveaux. <code>h1</code> est le titre principal ; <code>h2</code> un sous-titre, etc.</p><pre class="course-code"><code>&lt;h1&gt;Mon site&lt;/h1&gt;
+&lt;h2&gt;Présentation&lt;/h2&gt;
+&lt;h3&gt;Mes passions&lt;/h3&gt;</code></pre></article>
+        <article class="course-card course-item" data-search="p paragraphe texte"><h3><code>&lt;p&gt;</code></h3><p>Crée un paragraphe.</p><pre class="course-code"><code>&lt;p&gt;J'apprends à coder.&lt;/p&gt;</code></pre></article>
+        <article class="course-card course-item" data-search="br retour ligne saut ligne"><h3><code>&lt;br&gt;</code></h3><p>Fait passer le texte à la ligne. À utiliser pour un vrai retour à la ligne, pas pour créer de grands espaces.</p><pre class="course-code"><code>Bonjour&lt;br&gt;tout le monde !</code></pre></article>
+        <article class="course-card course-item" data-search="strong important gras"><h3><code>&lt;strong&gt;</code></h3><p>Indique que le texte est important. Il apparaît généralement en gras.</p><pre class="course-code"><code>&lt;strong&gt;Attention !&lt;/strong&gt;</code></pre></article>
+        <article class="course-card course-item" data-search="em emphase italique accentuer"><h3><code>&lt;em&gt;</code></h3><p>Met un accent sur un mot ; il apparaît généralement en italique.</p><pre class="course-code"><code>C'est &lt;em&gt;important&lt;/em&gt;.</code></pre></article>
+        <article class="course-card course-item" data-search="mark surligner jaune"><h3><code>&lt;mark&gt;</code></h3><p>Surligne un passage pour le faire ressortir.</p></article>
+        <article class="course-card course-item" data-search="small petite note"><h3><code>&lt;small&gt;</code></h3><p>Affiche une note ou un texte secondaire plus petit.</p></article>
+        <article class="course-card course-item" data-search="hr séparation ligne horizontale"><h3><code>&lt;hr&gt;</code></h3><p>Marque une séparation thématique, souvent représentée par une ligne horizontale.</p></article>
+        <article class="course-card course-item" data-search="commentaire code invisible navigateur"><h3><code>&lt;!-- commentaire --&gt;</code></h3><p>Ajoute une note dans le code qui n'est pas affichée sur la page. Attention : elle reste visible dans le code source.</p></article>
+      </div>
+    </section>
+
+    <section class="course-section" id="cours-liens">
+      <h2>4. Ajouter des liens et des images</h2>
+      <div class="course-cards">
+        <article class="course-card course-item" data-search="a href lien adresse url site autre page"><h3><code>&lt;a href="..."&gt;</code></h3><p>Crée un lien vers un site ou une autre page.</p><pre class="course-code"><code>&lt;a href="https://example.com"&gt;
+  Visiter le site
+&lt;/a&gt;</code></pre><p>Pour ouvrir le lien dans un nouvel onglet, on peut ajouter <code>target="_blank" rel="noopener noreferrer"</code>.</p></article>
+        <article class="course-card course-item" data-search="img src image photo alt description"><h3><code>&lt;img&gt;</code></h3><p>Affiche une image. <code>src</code> indique son adresse et <code>alt</code> décrit l'image si elle ne se charge pas ou pour les lecteurs d'écran.</p><pre class="course-code"><code>&lt;img src="photo.jpg"
+     alt="Un paysage"&gt;</code></pre></article>
+        <article class="course-card course-item" data-search="figure figcaption légende photo image"><h3><code>&lt;figure&gt;</code> et <code>&lt;figcaption&gt;</code></h3><p>Permettent de regrouper une image et sa légende.</p><pre class="course-code"><code>&lt;figure&gt;
+  &lt;img src="photo.jpg" alt="Un chat"&gt;
+  &lt;figcaption&gt;Mon chat&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre></article>
+        <article class="course-card course-item" data-search="audio son musique mp3 controls"><h3><code>&lt;audio&gt;</code></h3><p>Ajoute un lecteur audio. L'attribut <code>controls</code> affiche les boutons du lecteur.</p><pre class="course-code"><code>&lt;audio controls src="son.mp3"&gt;&lt;/audio&gt;</code></pre></article>
+        <article class="course-card course-item" data-search="video film mp4 lecteur controls"><h3><code>&lt;video&gt;</code></h3><p>Ajoute une vidéo à la page.</p><pre class="course-code"><code>&lt;video controls width="400"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Votre navigateur ne peut pas lire cette vidéo.
+&lt;/video&gt;</code></pre></article>
+      </div>
+    </section>
+
+    <section class="course-section" id="cours-listes">
+      <h2>5. Faire des listes et des tableaux</h2>
+      <div class="course-cards">
+        <article class="course-card course-item" data-search="ul liste puces non ordonnée li élément"><h3><code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code></h3><p>Créent une liste à puces. Chaque élément se place dans <code>&lt;li&gt;</code>.</p><pre class="course-code"><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre></article>
+        <article class="course-card course-item" data-search="ol liste numérotée ordre"><h3><code>&lt;ol&gt;</code></h3><p>Crée une liste numérotée, par exemple des étapes à suivre.</p><pre class="course-code"><code>&lt;ol&gt;
+  &lt;li&gt;Ouvrir l'éditeur&lt;/li&gt;
+  &lt;li&gt;Écrire le code&lt;/li&gt;
+  &lt;li&gt;Tester la page&lt;/li&gt;
+&lt;/ol&gt;</code></pre></article>
+        <article class="course-card course-item" data-search="table tr th td tableau ligne cellule en-tête"><h3><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></h3><p>Construisent un tableau : <code>table</code> est le tableau, <code>tr</code> une ligne, <code>th</code> une cellule d'en-tête et <code>td</code> une cellule normale.</p><pre class="course-code"><code>&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Langage&lt;/th&gt;&lt;th&gt;Rôle&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;Structure&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre></article>
+      </div>
+    </section>
+
+    <section class="course-section" id="cours-formulaires">
+      <h2>6. Créer un formulaire</h2>
+      <p>Les formulaires servent à demander des informations. Pour enregistrer ou envoyer réellement les réponses, il faut aussi prévoir un traitement adapté.</p>
+      <div class="course-cards">
+        <article class="course-card course-item" data-search="form formulaire envoyer informations"><h3><code>&lt;form&gt;</code></h3><p>Regroupe les champs d'un formulaire.</p></article>
+        <article class="course-card course-item" data-search="label étiquette champ texte accessible"><h3><code>&lt;label&gt;</code></h3><p>Donne un nom à un champ. Son attribut <code>for</code> doit correspondre à l'<code>id</code> du champ.</p></article>
+        <article class="course-card course-item" data-search="input champ texte email password checkbox radio number"><h3><code>&lt;input&gt;</code></h3><p>Crée un champ. Le type peut être <code>text</code>, <code>email</code>, <code>password</code>, <code>number</code>, <code>checkbox</code> ou <code>radio</code>.</p></article>
+        <article class="course-card course-item" data-search="textarea texte long message"><h3><code>&lt;textarea&gt;</code></h3><p>Permet de saisir un texte sur plusieurs lignes.</p></article>
+        <article class="course-card course-item" data-search="select option menu déroulant choix"><h3><code>&lt;select&gt;</code> et <code>&lt;option&gt;</code></h3><p>Créent une liste déroulante de choix.</p></article>
+        <article class="course-card course-item" data-search="button bouton clic submit reset"><h3><code>&lt;button&gt;</code></h3><p>Crée un bouton. Dans un formulaire, <code>type="submit"</code> sert à envoyer et <code>type="button"</code> crée un bouton d'action ordinaire.</p></article>
+      </div>
+      <pre class="course-code"><code>&lt;form&gt;
+  &lt;label for="prenom"&gt;Ton prénom :&lt;/label&gt;
+  &lt;input id="prenom" name="prenom" type="text" required&gt;
+  &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+    </section>
+
+    <section class="course-section" id="cours-semantiques">
+      <h2>7. Les balises qui organisent une page</h2>
+      <div class="course-cards">
+        <article class="course-card course-item" data-search="header en-tête haut de page"><h3><code>&lt;header&gt;</code></h3><p>Contient souvent le titre, le logo ou l'introduction d'une page ou d'une section.</p></article>
+        <article class="course-card course-item" data-search="nav navigation menu liens"><h3><code>&lt;nav&gt;</code></h3><p>Regroupe les principaux liens de navigation.</p></article>
+        <article class="course-card course-item" data-search="main contenu principal"><h3><code>&lt;main&gt;</code></h3><p>Contient le contenu principal de la page.</p></article>
+        <article class="course-card course-item" data-search="section section partie thème"><h3><code>&lt;section&gt;</code></h3><p>Regroupe une partie du contenu autour d'un même sujet, souvent avec un titre.</p></article>
+        <article class="course-card course-item" data-search="article article contenu indépendant"><h3><code>&lt;article&gt;</code></h3><p>Contient un contenu qui peut se comprendre seul, comme un article ou une publication.</p></article>
+        <article class="course-card course-item" data-search="aside complément encadré"><h3><code>&lt;aside&gt;</code></h3><p>Contient une information complémentaire, comme un encadré.</p></article>
+        <article class="course-card course-item" data-search="footer pied de page copyright"><h3><code>&lt;footer&gt;</code></h3><p>Contient souvent les informations de bas de page.</p></article>
+        <article class="course-card course-item" data-search="div conteneur bloc générique"><h3><code>&lt;div&gt;</code></h3><p>Regroupe des éléments sans leur donner de sens particulier. Pratique pour organiser la mise en page avec CSS.</p></article>
+        <article class="course-card course-item" data-search="span morceau texte ligne"><h3><code>&lt;span&gt;</code></h3><p>Regroupe une petite partie de texte ou un élément en ligne, souvent pour lui appliquer un style.</p></article>
+        <article class="course-card course-item" data-search="code code informatique pre conserver espaces"><h3><code>&lt;code&gt;</code> et <code>&lt;pre&gt;</code></h3><p><code>code</code> désigne du code informatique. <code>pre</code> conserve les espaces et les retours à la ligne.</p></article>
+      </div>
+    </section>
+
+    <section class="course-section" id="cours-attributs">
+      <h2>8. Les attributs à connaître</h2>
+      <div class="course-cards">
+        <article class="course-card course-item" data-search="id identifiant unique élément"><h3><code>id</code></h3><p>Donne un identifiant à un élément. Il doit être unique dans la page.</p><code>&lt;h2 id="presentation"&gt;</code></article>
+        <article class="course-card course-item" data-search="class classe css plusieurs éléments"><h3><code>class</code></h3><p>Associe un élément à une classe CSS. Plusieurs éléments peuvent avoir la même classe.</p><code>&lt;p class="important"&gt;</code></article>
+        <article class="course-card course-item" data-search="href destination lien url"><h3><code>href</code></h3><p>Indique la destination d'un lien <code>&lt;a&gt;</code>.</p></article>
+        <article class="course-card course-item" data-search="src source fichier image vidéo"><h3><code>src</code></h3><p>Indique la source d'un fichier, par exemple une image ou une vidéo.</p></article>
+        <article class="course-card course-item" data-search="alt texte alternatif accessibilité"><h3><code>alt</code></h3><p>Décrit une image pour les personnes qui ne la voient pas et en cas de chargement impossible.</p></article>
+        <article class="course-card course-item" data-search="style css en ligne couleur taille"><h3><code>style</code></h3><p>Permet d'ajouter du CSS directement à un élément. Pour un grand site, une feuille CSS est généralement plus pratique.</p></article>
+        <article class="course-card course-item" data-search="title infobulle survol"><h3><code>title</code></h3><p>Fournit une information complémentaire, parfois affichée au survol.</p></article>
+        <article class="course-card course-item" data-search="disabled required placeholder value name attribut formulaire"><h3><code>required</code>, <code>placeholder</code>, <code>name</code></h3><p><code>required</code> rend un champ obligatoire ; <code>placeholder</code> affiche une indication ; <code>name</code> donne un nom à la donnée envoyée.</p></article>
+      </div>
+    </section>
+
+    <section class="course-section" id="cours-css">
+      <h2>9. Les premières notions de CSS</h2>
+      <p>Le CSS se place dans un fichier <code>style.css</code> relié au HTML avec <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>, ou dans une balise <code>&lt;style&gt;</code> dans le <code>&lt;head&gt;</code>.</p>
+      <pre class="course-code"><code>body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f5ff;
+  color: #222;
+}
+
+h1 {
+  color: purple;
+  text-align: center;
+}
+
+.carte {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}</code></pre>
+      <div class="course-cards">
+        <article class="course-card course-item" data-search="color couleur texte css"><h3><code>color</code></h3><p>Change la couleur du texte.</p></article>
+        <article class="course-card course-item" data-search="background background-color arrière-plan couleur"><h3><code>background-color</code></h3><p>Change la couleur de fond.</p></article>
+        <article class="course-card course-item" data-search="font-size taille texte"><h3><code>font-size</code></h3><p>Définit la taille du texte, par exemple <code>18px</code>.</p></article>
+        <article class="course-card course-item" data-search="margin marge extérieur espace"><h3><code>margin</code></h3><p>Ajoute de l'espace à l'extérieur d'un élément.</p></article>
+        <article class="course-card course-item" data-search="padding espace intérieur bordure"><h3><code>padding</code></h3><p>Ajoute de l'espace entre le contenu et le bord de l'élément.</p></article>
+        <article class="course-card course-item" data-search="border bordure border-radius arrondi"><h3><code>border</code> et <code>border-radius</code></h3><p>Créent une bordure et arrondissent les coins.</p></article>
+        <article class="course-card course-item" data-search="display flex grid disposition alignement"><h3><code>display</code>, <code>flex</code>, <code>grid</code></h3><p>Contrôlent la façon dont les éléments sont disposés.</p></article>
+        <article class="course-card course-item" data-search="width height largeur hauteur image"><h3><code>width</code> et <code>height</code></h3><p>Définissent la largeur et la hauteur d'un élément.</p></article>
+      </div>
+    </section>
+
+    <section class="course-section" id="cours-js">
+      <h2>10. Les premières notions de JavaScript</h2>
+      <p>JavaScript rend la page interactive. On peut écrire le code dans un fichier <code>script.js</code>, puis le relier avec <code>&lt;script src="script.js" defer&gt;&lt;/script&gt;</code>.</p>
+      <pre class="course-code"><code>// Afficher un message dans la console
+console.log("Bonjour !");
+
+// Créer une variable
+const prenom = "Hugo";
+
+// Réagir à un clic sur un bouton
+document.querySelector("#monBouton").addEventListener("click", () => {
+  alert("Salut " + prenom + " !");
+});</code></pre>
+      <div class="course-cards">
+        <article class="course-card course-item" data-search="const let variable valeur"><h3><code>const</code> et <code>let</code></h3><p>Créent des variables. Utilise souvent <code>const</code> si la variable ne doit pas être réassignée, et <code>let</code> si sa valeur doit changer.</p></article>
+        <article class="course-card course-item" data-search="function fonction réutiliser code"><h3><code>function</code></h3><p>Permet de regrouper des instructions pour les réutiliser.</p></article>
+        <article class="course-card course-item" data-search="if else condition si sinon"><h3><code>if</code> et <code>else</code></h3><p>Exécutent des instructions selon une condition.</p></article>
+        <article class="course-card course-item" data-search="addEventListener clic événement bouton"><h3><code>addEventListener</code></h3><p>Permet de lancer du code lorsqu'un événement se produit, comme un clic.</p></article>
+        <article class="course-card course-item" data-search="querySelector sélectionner élément html"><h3><code>querySelector</code></h3><p>Sélectionne le premier élément HTML qui correspond au sélecteur indiqué.</p></article>
+        <article class="course-card course-item" data-search="console.log console débogage"><h3><code>console.log()</code></h3><p>Affiche une information dans la console du navigateur, utile pour comprendre son programme.</p></article>
+      </div>
+    </section>
+
+    <section class="course-section" id="cours-pratique">
+      <h2>11. Exercice : crée ta première page</h2>
+      <p>Essaie de comprendre ce code, puis copie-le dans un fichier nommé <code>index.html</code> et ouvre-le dans ton navigateur.</p>
+      <pre class="course-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Ma page&lt;/title&gt;
+  &lt;style&gt;
+    body { font-family: Arial; padding: 20px; }
+    h1 { color: purple; }
+    button { padding: 10px; cursor: pointer; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Salut !&lt;/h1&gt;
+  &lt;p&gt;Je suis en train d'apprendre le HTML.&lt;/p&gt;
+  &lt;button id="bouton"&gt;Clique ici&lt;/button&gt;
+  &lt;p id="resultat"&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+    document.querySelector("#bouton").addEventListener("click", () =&gt; {
+      document.querySelector("#resultat").textContent =
+        "Bravo, ton premier bouton fonctionne !";
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <div class="course-tip"><strong>Défi :</strong> change le titre, ajoute une deuxième phrase, modifie la couleur du titre et crée un lien vers un site que tu aimes.</div>
+    </section>
+
+    <section class="course-section">
+      <h2>12. Quelques bonnes habitudes</h2>
+      <ul class="course-checklist">
+        <li>Indente ton code pour voir quels éléments sont à l'intérieur des autres.</li>
+        <li>Ferme les balises qui doivent l'être.</li>
+        <li>Utilise des titres dans le bon ordre et des descriptions <code>alt</code> pour les images utiles.</li>
+        <li>Garde les fichiers du site ensemble et vérifie les noms et les extensions.</li>
+        <li>Teste souvent dans le navigateur et lis les messages d'erreur de la console.</li>
+        <li>Fais une copie de sauvegarde avant une grosse modification.</li>
+      </ul>
+      <p class="course-end">Tu n'as pas besoin de tout retenir par cœur : garde ce guide comme dictionnaire et entraîne-toi avec de petits projets. 🚀</p>
+    </section>
+  </div>
+
+</section>
 <section class="sm-page" id="page-buaungaja" hidden><div style="background:#030303;padding:42px"><header style="text-align:center;padding:28px 18px;border-radius:12px;background:#030303;color:#ffffff"><h1 style="font-size:40px;line-height:1.15;margin:0 0 14px">Aprendre a Utiliser Git Hub</h1><p style="font-size:17px;line-height:1.6;margin:0 0 20px">Présente ton projet en quelques mots.</p><a data-page-target="accueil" href="#accueil" style="display:inline-block;padding:11px 18px;background:#fff;color:#030303;border-radius:9px;text-decoration:none;font-weight:700">Découvrir</a></header></div>
   <div style="background:#ffffff;padding:16px"><p style="margin:0;font-size:20px;color:#000000;text-align:left;line-height:1.65">voici Github ce site vous permetra d&#39;héberger vos site sur une adresse qui permettra a tout le monde avec un lien de pouvoir aller sur votre site.</p></div>
   <div style="background:#ffffff;padding:12px"><div style="text-align:left"><a  href="https://github.com/" style="color:#6857e8;font-size:16px;text-decoration:underline">Github</a></div></div>
@@ -86,6 +383,29 @@
 function smShowPage(id){const pages=[...document.querySelectorAll('.sm-page')];if(!pages.some(p=>p.id===id))return false;pages.forEach(p=>p.hidden=p.id!==id);document.querySelectorAll('.sm-page-nav a').forEach(a=>a.style.fontWeight=a.dataset.pageTarget===id?'800':'600');if(location.hash!=='#'+id)history.replaceState(null,'','#'+id);window.scrollTo({top:0,behavior:'smooth'});return true;}document.addEventListener('click',e=>{const a=e.target.closest('[data-page-target]');if(!a)return;const id=a.dataset.pageTarget;if(smShowPage(id)){e.preventDefault();}});window.addEventListener('hashchange',()=>smShowPage(location.hash.slice(1)));const initial=location.hash.slice(1);if(initial)smShowPage(initial);
 document.querySelectorAll('[data-contact-form]').forEach(form=>{form.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(form);const email=form.dataset.email||'';const subject=encodeURIComponent('Message depuis le site de '+(d.get('name')||''));const body=encodeURIComponent('Nom : '+(d.get('name')||'')+'\nE-mail : '+(d.get('from')||'')+'\n\n'+(d.get('message')||''));if(!email||email==='contact@example.com'){const status=form.querySelector('[data-form-status]');if(status)status.textContent='Configure l’adresse e-mail de réception dans SiteMaker.';return}window.location.href='mailto:'+email+'?subject='+subject+'&body='+body;});});
 document.querySelectorAll('[data-carousel]').forEach(car=>{let urls=[];try{urls=JSON.parse(car.querySelector('[data-images]').dataset.images||'[]')}catch(e){}if(!urls.length)return;let i=0;const img=car.querySelector('img'),counter=car.querySelector('[data-counter]');const show=()=>{img.src=urls[i];counter.textContent=(i+1)+' / '+urls.length};car.querySelector('[data-prev]').addEventListener('click',()=>{i=(i-1+urls.length)%urls.length;show()});car.querySelector('[data-next]').addEventListener('click',()=>{i=(i+1)%urls.length;show()})});
+
+
+// Recherche dans le guide HTML/CSS/JavaScript
+(function(){
+  const search = document.getElementById('htmlCourseSearch');
+  if (!search) return;
+  const items = Array.from(document.querySelectorAll('.html-course .course-item'));
+  const count = document.getElementById('htmlCourseCount');
+  function filterCourse(){
+    const query = search.value.trim().toLocaleLowerCase('fr');
+    let visible = 0;
+    items.forEach(item => {
+      const haystack = (item.innerText + ' ' + (item.dataset.search || '')).toLocaleLowerCase('fr');
+      const match = !query || haystack.includes(query);
+      item.hidden = !match;
+      if (match) visible++;
+    });
+    count.textContent = query
+      ? visible + ' fiche(s) correspond(ent) à « ' + search.value.trim() + ' ».'
+      : 'Toutes les fiches sont affichées.';
+  }
+  search.addEventListener('input', filterCourse);
+})();
 
 </script>
 </body>
